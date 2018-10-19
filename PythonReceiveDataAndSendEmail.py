@@ -49,7 +49,7 @@ with Serial(port="/dev/cu.usbmodem1411", baudrate=9600, timeout=1, writeTimeout=
                 #alert,nomImage,condition = msgs.split(",")
                 server = smtplib.SMTP('smtp.gmail.com', 587)
                 server.starttls()
-                server.login(fromaddr, "Loganclio33")
+                server.login(fromaddr, "*******")
                 text = msg.as_string()
                 server.sendmail(fromaddr, toaddr, text)
                 server.quit()
